@@ -6,6 +6,7 @@ import Header from './components/Header.jsx'
 import About from './components/About.jsx'
 import Projects from './components/Projects.jsx'
 import Testimonials from './components/Testimonials.jsx'
+import Contract from './components/Contract.jsx'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About/>
       <Projects/>
       <Testimonials/>
+      <Contract/>
     </div>
   )
 }
