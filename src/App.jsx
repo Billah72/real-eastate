@@ -7,11 +7,13 @@ import About from './components/About.jsx'
 import Projects from './components/Projects.jsx'
 import Testimonials from './components/Testimonials.jsx'
 import Contract from './components/Contract.jsx'
+import { ToastContainer} from 'react-toastify';
 
 function App() {
   return (
     <div className='w-full overflow-hidden '>
-      <Header />
+      <ToastContainer/>
+      <Header/>
       <About/>
       <Projects/>
       <Testimonials/>
