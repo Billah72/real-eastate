@@ -8,6 +8,7 @@ import Projects from './components/Projects.jsx'
 import Testimonials from './components/Testimonials.jsx'
 import Contract from './components/Contract.jsx'
 import { ToastContainer} from 'react-toastify';
+import Footer from './components/Footer.jsx'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Projects/>
       <Testimonials/>
       <Contract/>
+      <Footer/>
     </div>
   )
 }
