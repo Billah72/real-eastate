@@ -1,0 +1,8 @@
+{
+  "id": "af97ef",
+  "name": "My Plugin",
+  "modes": [
+    "canvas"
+  ],
+  "icon": "/icon.svg"
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import { toast } from 'react-toastify';
+import { motion } from 'framer-motion'
 
 const Contract = () => {
 
@@ -31,7 +32,12 @@ const Contract = () => {
   };
 
   return (
-    <div className='text-center p-6  py-20 lg:px-32 w-full overflow-hidden' id='Contract'>
+    <motion.div
+      initial={{ opacity: 0, x: -200 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      className='text-center p-6  py-20 lg:px-32 w-full overflow-hidden' id='Contract'>
       <h1 className='text-2xL sm:text-4xl font-bold mb-2 text-center'>
         Contract <span className='underline underline-offset-4 decoration-1 under font-light'>With Us</span>
       </h1>
@@ -53,11 +59,11 @@ const Contract = () => {
           <textarea className='w-full border border-gray-300 rounded py-3 px-4 mt-2 h-48 resize-none' name="Message" placeholder='Message' id="Message" required></textarea>
         </div>
 
-        <button className=' bg-blue-600 text-white py-2 px-12 mb-10 rounded'> 
+        <button className=' bg-blue-600 text-white py-2 px-12 mb-10 rounded'>
           {result ? result : " Send Messege"}
         </button>
       </form>
-    </div>
+    </motion.div>
   )
 }
 
